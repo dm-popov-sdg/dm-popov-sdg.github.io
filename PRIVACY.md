@@ -1,102 +1,166 @@
-# Privacy Policy for EuroPay QR Converter
+# Privacy Policy for EuroQRPay: SEPA QR Scanner
 
-_Last updated: November 28, 2025_
+_Last updated: July 15, 2026_
 
-EuroPay QR Converter (the "App") is a mobile utility that helps you read and convert European payment QR codes (Slovenian UPN and EPC/SEPA formats). This document explains how the App handles your data.
+## App and developer identification
 
-The App is published by the individual developer listed on the Google Play Store listing ("we", "us").
+- **App name:** EuroQRPay: SEPA QR Scanner
+- **Android package name:** `com.euroqrpay.app`
+- **Developer:** Dmitrii Popov
+- **Contact email:** popov17022@gmail.com
+- **Developer location:** Slovenia
 
----
+This Privacy Policy explains how Dmitrii Popov (the "Developer") handles data
+when you use EuroQRPay: SEPA QR Scanner (the "App"). The App reads and converts
+European payment QR codes, including Slovenian UPN, EPC/SEPA, Swiss QR-bill, and
+supported Czech payment QR formats.
 
-## 1. Data we process
+## 1. Payment data processed on your device
 
-The App processes the following types of data **on your device** when you use it:
+When you scan, import, or manually enter payment information, the App may
+process:
 
-- **Payment QR contents**: when you scan or import a QR code, the App reads the encoded text.
-- **Payment details parsed from the QR**:
-  - Recipient name
-  - IBAN
-  - Amount
-  - Payment reference (structured/unstructured)
-  - Optional BIC and purpose text
+- QR-code contents;
+- recipient name and address;
+- IBAN and optional BIC;
+- amount and currency;
+- payment reference;
+- payment purpose or remittance information.
 
-This data is used only to display and convert the payment, and to generate new QR codes for your own banking app.
+This information is used to display, edit, and convert payment data and to
+generate a new QR code. QR decoding, payment parsing, and QR generation happen
+locally on your device. The App does not execute payments, log in to your bank,
+or operate a payment-processing backend.
 
-We do **not** collect usernames, passwords, bank logins, or card numbers.
+The Developer does not transmit payment QR contents, IBANs, amounts, recipient
+details, references, purposes, remittance information, BICs, or bank details to
+the Developer's servers or to Firebase Analytics or Crashlytics.
 
----
+The App does not collect bank usernames, passwords, card numbers, or banking
+credentials.
 
-## 2. How data is processed
+## 2. Favourites, local state, and backups
 
-- All QR decoding and payment parsing happens **locally on your device**.
-- We do **not** run our own backend service for the App.
-- We do **not** transmit payment details (recipient, IBAN, amount, reference) from your device to our own servers.
+If you use Favourites, the App stores reusable payee and reference information
+in an encrypted vault on your device. Saved favourites do not contain payment
+amounts. Access to the vault is protected by the authentication methods
+available on your device, such as biometrics or device credentials.
 
-If you choose to share a generated QR image or copy text into another app (for example, your banking app or a messaging app), the selected data will be handed off through the standard Android/iOS share mechanisms that you initiate.
+If you export a backup, the App creates an encrypted backup file. You decide
+where that file is saved or shared. Imported and exported backup files are not
+uploaded to a server operated by the Developer.
 
----
+The App may also store non-payment state locally, such as whether a one-time
+conversion feedback question has already been displayed. This state contains
+only categorical conversion context and lifecycle flags, not payment details.
 
-## 3. Permissions
+## 3. Analytics and crash reporting
 
-The App may request the following permissions depending on how you use it:
+The Android version of the App uses Google Firebase Analytics and Firebase
+Crashlytics to understand aggregate feature usage, diagnose failures, and improve
+the App.
 
-- **Camera** – used only to scan payment QR codes.
-- **Photo / media access** – used only if you choose to import a QR code from your gallery.
+Firebase Analytics may receive categorical interaction data such as:
 
-You can decline these permissions. If you do, you can still enter payment details **manually** in the App.
+- whether input came from scanning, manual entry, or a favourite;
+- source and generated QR format identifiers;
+- actions such as viewing, sharing, saving, or copying a generated QR;
+- a categorical response to the one-time conversion feedback question;
+- feature-vote and review-request events;
+- app version and general app/device information collected by Firebase.
 
-We do not use these permissions to collect other media or to track you.
+Firebase Crashlytics may receive crash logs, diagnostic information, app version,
+device model, operating-system information, and identifiers used by Firebase to
+associate events or crashes with an app installation.
 
----
+Firebase services may derive general geographic information, such as country or
+city, from network information. The App does not send precise GPS location to
+Firebase.
 
-## 4. Advertising and third‑party services
+Analytics and crash data is processed by Google under Google's applicable terms
+and privacy policies. The Developer uses this data for analytics and app
+reliability, not for advertising or payment profiling.
 
-The App uses **Google AdMob** to show ads.
+## 4. Permissions
 
-AdMob may collect certain data, for example:
+The App may request:
 
-- Advertising identifiers
-- Approximate location or device information
-- Interaction data related to ads
+- **Camera access** — only to scan QR codes;
+- **Photo or media access** — only when you choose to import or save an image;
+- **Biometric or device authentication** — only to protect access to the local
+  favourites vault.
 
-This data collection is controlled by Google and is covered by Google&apos;s own privacy policies and the choices you make in Google settings and the consent dialog (where applicable).
+You can decline or revoke these permissions in your device settings. Some
+related features may then be unavailable, but payment details can still be
+entered manually.
 
-We do **not** send payment data parsed from QR codes to AdMob for profiling or targeting, and we do **not** sell this data to third parties.
+The App does not use camera or media permissions to collect unrelated media or
+to track you.
 
-Other than AdMob and the platform providers (Google/Apple) that distribute the App, we do not integrate additional third‑party analytics SDKs.
+## 5. Sharing and saving initiated by you
 
----
+When you choose to share, copy, or save a generated QR code or encrypted backup,
+the selected data is passed to the destination you choose through operating
+system functionality. Data handled by another app, storage provider, banking
+app, or messaging service is governed by that provider's privacy policy.
 
-## 5. Data retention
+## 6. Advertising and sale of data
 
-- Payment data is held in memory only while you use the App and is discarded when you close the App or reset the form.
-- We do not store payment data on our own servers.
-- If your device or another app (for example, your banking app) stores data after you share or copy it there, that storage is governed by that app&apos;s own privacy policy.
+The App does not display advertising and does not include third-party advertising
+SDKs. The Developer does not sell payment data, analytics data, or other user
+data.
 
----
+Other than platform services used to distribute the App and Google Firebase
+services used for analytics and crash reporting, the App does not transmit user
+data to a backend or third-party analytics provider operated by the Developer.
 
-## 6. Children
+## 7. Data retention and deletion
 
-The App is intended for general use by adults who manage their own bank payments. It is **not** designed for children and does not knowingly target or collect personal data from children.
+- Unsaved payment data is kept locally while you use the relevant App flow and
+  is discarded when the flow is reset or the App process is cleared.
+- Favourites remain encrypted on your device until you delete them, clear the
+  App's data, or uninstall the App.
+- Exported QR images and backup files remain wherever you chose to save them
+  until you delete them there.
+- Local feedback and review lifecycle state remains on the device until it is no
+  longer required, the App's data is cleared, or the App is uninstalled.
+- Firebase Analytics and Crashlytics retain analytics and diagnostic data under
+  Google's retention rules and the Firebase/Google Analytics configuration used
+  by the Developer.
 
----
+Because the Developer does not operate user accounts or a payment-data backend,
+the Developer does not hold server-side copies of your payment details that can
+be retrieved or deleted from an account.
 
-## 7. Your choices and rights
+## 8. Children
 
-- You can revoke camera and photo permissions at any time in your device settings.
-- You can uninstall the App at any time, which removes the App and its local data from your device.
-- You can manage ad personalization and related data directly in your Google account and device settings.
+The App is intended for people who manage their own bank payments. It is not
+designed for children and does not knowingly target children or request personal
+data from them.
 
-Because we do not operate a backend and do not maintain user accounts for this App, we do not hold server‑side copies of your payment data that could be edited or deleted by us.
+## 9. Your choices and rights
 
----
+You can:
 
-## 8. Changes to this policy
+- decline or revoke App permissions;
+- delete favourites and locally stored files;
+- clear the App's local data;
+- uninstall the App;
+- contact the Developer about this Privacy Policy or applicable data-protection
+  rights.
 
-We may update this Privacy Policy from time to time. When we do, we will adjust the "Last updated" date at the top of this document. Material changes may also be reflected in the App description on the store listing.
+## 10. Changes to this policy
 
----
+This Privacy Policy may be updated when the App, its data practices, or legal
+requirements change. The "Last updated" date above identifies the current
+version.
 
-## 9. Contact
+## 11. Contact
 
-If you have questions about this Privacy Policy or how the App handles data, please use the contact details provided in the Google Play Store listing (developer email).
+For privacy questions or requests, contact:
+
+**Dmitrii Popov**
+
+Email: **popov17022@gmail.com**
+
+Location: **Slovenia**
