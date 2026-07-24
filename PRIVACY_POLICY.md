@@ -2,8 +2,6 @@
 
 **Effective date / Дата вступления в силу:** 23 July 2026
 
-> Before publication, replace both placeholders below with the public developer name shown in Google Play and a working contact email address. Host this policy at a public HTTPS URL and add that URL in Google Play Console and inside the app.
-
 **Developer / Разработчик:** Dmitrii Popov
 
 **Privacy contact / Контакт по вопросам конфиденциальности:** popov17022@gmail.com
