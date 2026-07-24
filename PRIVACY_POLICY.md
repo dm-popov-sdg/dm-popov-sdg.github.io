@@ -52,7 +52,7 @@ If FitBubble later adds features such as accounts, cloud sync, notifications, an
 
 ### 10. Contact
 
-For privacy questions, contact: **[YOUR CONTACT EMAIL]**.
+For privacy questions, contact: **popov17022@gmail.com**.
 
 ---
 
@@ -100,4 +100,4 @@ FitBubble не предназначен для сбора данных дете�
 
 ### 10. Контакт
 
-По вопросам конфиденциальности: **[YOUR CONTACT EMAIL]**.
+По вопросам конфиденциальности: **popov17022@gmail.com**.
